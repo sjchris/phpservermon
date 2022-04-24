@@ -558,7 +558,7 @@ class StatusNotifier
         if ($this->status_new === true) {
             $pushover->setPriority(0);
         } else {
-            $pushover->setPriority(2);
+            $pushover->setPriority(0);
             //Used with Priority = 2; Pushover will resend the notification every 60 seconds until the user accepts.
             $pushover->setRetry(300);
             // Used with Priority = 2; Pushover will resend the notification every 60 seconds for 3600 seconds.
